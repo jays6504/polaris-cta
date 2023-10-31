@@ -10,7 +10,8 @@ export class PolarisCTA extends LitElement {
       filled: {type: Boolean, reflect: true},
       tinted: {type: Boolean, reflect: true},
       lightoutline: {type: Boolean, reflect: true},
-      lightfill: {type: Boolean, reflect: true}
+      lightfill: {type: Boolean, reflect: true},
+      active: {type: Boolean, reflect: true},
     };
   }
 
@@ -22,7 +23,7 @@ export class PolarisCTA extends LitElement {
         padding: 1rem 1rem;
         text-align: center;
       }
-      
+
       a {
         font-style: italic;
         text-decoration: none;
@@ -47,7 +48,7 @@ export class PolarisCTA extends LitElement {
           color: #005fa9;
           cursor: pointer;
         }
-
+        :host([outline][active]),
         :host([outline]) .link:hover,
         :host([outline]) .link:focus{
           background-color: #005fa9;
@@ -63,7 +64,7 @@ export class PolarisCTA extends LitElement {
           color: #ffffff;
           cursor: pointer;
         }
-
+        :host([filled][active]),
         :host([filled]) .link:hover,
         :host([filled]) .link:focus{
           background-color: #ffffff;
@@ -76,7 +77,7 @@ export class PolarisCTA extends LitElement {
           background-color: #4f627c;
           color: #b0e1ff;
         }
-
+        :host([tinted][active]),
         :host([tinted]) .link:hover,
         :host([tinted]) .link:focus{
           border: 2px solid #b0e1ff;
@@ -90,7 +91,7 @@ export class PolarisCTA extends LitElement {
           background-color: #001e44;
           color: #ccf0ff;
         }
-
+        :host([lightoutline][active]),
         :host([lightoutline]) .link:hover,
         :host([lightoutline]) .link:focus{
           border: 2px solid #ccf0ff;
@@ -103,7 +104,7 @@ export class PolarisCTA extends LitElement {
           background-color: #ccf0ff;
           color: #001e44;
         }
-
+        :host([lightfilled][active]),
         :host([lightfilled]) .link:hover,
         :host([lightfilled]) .link:focus{
           border: 2px solid #ffffff;
@@ -111,10 +112,10 @@ export class PolarisCTA extends LitElement {
           color: #ccf0ff;
         }
         /* Gradient is based on the example button o the news page itself.*/
+        :host([gradient][active]),
         :host([gradient]) .link:hover,
         :host([gradient]) .link:focus{
           border: 2px solid #001e44;
-          background: gradient(linear,left top, left bottom,color-stop(1%, #009cde),color-stop(66%, #1b5c99),to(#1e407c));
           background: linear-gradient(to bottom,#009cde 1%,#1b5c99 66%,#1e407c 100%);
           color: #ffffff;
           border-radius: 2px;
