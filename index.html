@@ -8,10 +8,25 @@
   <base href="/">
 
   <style>
+
+    .tint {
+      background-color: rgb(154, 154, 154);
+    }
+
+    .light {
+      background-color: #001e44;
+      color: white;
+    }
+
+    .wrapper {
+      padding: 16px;
+      display: flex;
+      border: 2px solid black;
+      margin: 8px;
+    }
+
     html,
     body {
-      margin: 0;
-      padding: 0;
       font-family: sans-serif;
       background-color: #ffffff;
     }
@@ -20,13 +35,30 @@
 </head>
 
 <body>
-  <polaris-cta light name="Subscribe"></polaris-cta>
-  <polaris-cta light active name="Subscribe"></polaris-cta>
-  <polaris-cta dark name="Subscribe"></polaris-cta>
-  <polaris-cta dark active name="Subscribe"></polaris-cta>
-  <polaris-cta tinted name="Subscribe"></polaris-cta>
-  <polaris-cta light gradient name="Subscribe"></polaris-cta>
-  <polaris-cta light gradient active name="Subscribe"></polaris-cta>
+  <div class="wrapper">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta outline></polaris-cta></div>
+
+  <div class="wrapper">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta filled></polaris-cta></div>
+
+  <div class="wrapper tint">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta tinted></polaris-cta></div>
+
+  <div class="wrapper light">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta lightoutline></polaris-cta></div>
+
+  <div class="wrapper light">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta lightfilled></polaris-cta></div>
+
+  <div class="wrapper">
+    <p>GET THE NEWS BY EMAIL</p>
+  <polaris-cta outline gradient></polaris-cta></div>
+
   <script type="module" src="./src/polaris-cta.js"></script>
 </body>
 
