@@ -22,16 +22,7 @@ export class PolarisCTA extends LitElement {
         padding: 1rem 1rem;
         text-align: center;
       }
-
-      p {
-        font-style: bold;
-        display: block;
-        margin-block-start: 1em;
-        margin-block-end: 1em;
-        margin-inline-start: 0px;
-        margin-inline-end: 0px;
-      }
-
+      
       a {
         font-style: italic;
         text-decoration: none;
