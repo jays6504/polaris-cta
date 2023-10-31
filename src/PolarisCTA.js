@@ -12,7 +12,7 @@ export class PolarisCTA extends LitElement {
       lightoutline: {type: Boolean, reflect: true},
       lightfill: {type: Boolean, reflect: true},
       active: {type: Boolean, reflect: true},
-      beveled: {type: Boolean, reflect: true},
+      round: {type: Boolean, reflect: true},
     };
   }
 
@@ -121,7 +121,7 @@ export class PolarisCTA extends LitElement {
           color: #ffffff;
         }
 
-        :host([beveled]) .link
+        :host([round]) .link
         {
           border-radius: 4px;
         }
