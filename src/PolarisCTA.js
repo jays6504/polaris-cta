@@ -20,8 +20,8 @@ export class PolarisCTA extends LitElement {
       :host {
         display: inline-block;
         justify-content: center;
-        padding: 1rem 1rem;
         text-align: center;
+        padding: 1rem 1rem;
       }
 
       a {
